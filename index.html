@@ -49,10 +49,16 @@
         <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <span class="text-teal-600 text-2xl font-bold">♥ ECGreaderPro</span>
-                <span class="text-sm text-slate-500 hidden sm:inline-block border-l border-slate-300 pl-2 ml-2">Transparencia y Privacidad</span>
+                <span class="text-sm text-slate-500 hidden sm:inline-block border-l border-slate-300 pl-2 ml-2" data-i18n="header-subtitle">Transparencia y Privacidad</span>
             </div>
-            <div class="text-xs text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
-                Última actualización: 10 de marzo de 2026
+            <div class="flex items-center gap-3">
+                <div class="text-xs text-slate-500 bg-slate-100 px-3 py-1 rounded-full hidden sm:block" data-i18n="last-update">
+                    Última actualización: 10 de marzo de 2026
+                </div>
+                <!-- Botón de Idioma -->
+                <button id="lang-btn" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-1 px-3 rounded-full text-xs transition-colors shadow-sm">
+                    🌐 ES / EN
+                </button>
             </div>
         </div>
     </header>
@@ -63,13 +69,13 @@
         <!-- Sidebar Navigation -->
         <aside class="w-full md:w-64 flex-shrink-0">
             <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sticky top-24">
-                <h2 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Explorar Política</h2>
+                <h2 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4" data-i18n="nav-title">Explorar Política</h2>
                 <nav class="flex flex-col gap-2" id="nav-tabs">
-                    <button data-target="resumen" class="tab-btn active text-left px-4 py-3 rounded-lg border border-transparent hover:bg-slate-50 transition-colors font-medium text-slate-700">Resumen Principal</button>
-                    <button data-target="datos" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700">1. Datos y Privacidad</button>
-                    <button data-target="descargo" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700">2. Descargo Médico</button>
-                    <button data-target="tecnico" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700">3. Detalles Técnicos</button>
-                    <button data-target="general" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700">4. Información General</button>
+                    <button data-target="resumen" class="tab-btn active text-left px-4 py-3 rounded-lg border border-transparent hover:bg-slate-50 transition-colors font-medium text-slate-700" data-i18n="nav-resumen">Resumen Principal</button>
+                    <button data-target="datos" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700" data-i18n="nav-datos">1. Datos y Privacidad</button>
+                    <button data-target="descargo" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700" data-i18n="nav-descargo">2. Descargo Médico</button>
+                    <button data-target="tecnico" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700" data-i18n="nav-tecnico">3. Detalles Técnicos</button>
+                    <button data-target="general" class="tab-btn text-left px-4 py-3 rounded-lg border border-slate-200 hover:bg-slate-50 transition-colors font-medium text-slate-700" data-i18n="nav-general">4. Información General</button>
                 </nav>
             </div>
         </aside>
@@ -79,19 +85,19 @@
             
             <!-- SECTION: Resumen -->
             <div id="resumen" class="content-section fade-in block">
-                <h1 class="text-3xl font-bold text-slate-800 mb-4">Bienvenido a la Privacidad por Diseño</h1>
-                <p class="text-lg text-slate-600 mb-8 border-l-4 border-teal-500 pl-4">
+                <h1 class="text-3xl font-bold text-slate-800 mb-4" data-i18n="resumen-title">Bienvenido a la Privacidad por Diseño</h1>
+                <p class="text-lg text-slate-600 mb-8 border-l-4 border-teal-500 pl-4" data-i18n="resumen-p1">
                     Esta sección introductoria resume la filosofía principal de ECGreaderPro: ser una herramienta estrictamente educativa sin comprometer información sensible.
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-50 rounded-xl p-6 border border-slate-100">
                     <div>
-                        <h3 class="text-xl font-bold text-teal-700 mb-2">Nuestro Compromiso</h3>
-                        <p class="text-slate-700 mb-4">Nuestra prioridad principal es tu privacidad y la seguridad de la información médica. No requerimos cuentas, analizamos la información de forma segura y funcionamos de manera anónima.</p>
+                        <h3 class="text-xl font-bold text-teal-700 mb-2" data-i18n="resumen-h3">Nuestro Compromiso</h3>
+                        <p class="text-slate-700 mb-4" data-i18n="resumen-p2">Nuestra prioridad principal es tu privacidad y la seguridad de la información médica. No requerimos cuentas, analizamos la información de forma segura y funcionamos de manera anónima.</p>
                         <ul class="space-y-2 text-slate-600">
-                            <li>✓ <span class="font-semibold">0%</span> Datos Personales Recopilados</li>
-                            <li>✓ <span class="font-semibold">0%</span> Retención de Imágenes (No se guardan)</li>
-                            <li>✓ <span class="font-semibold">100%</span> Procesamiento Efímero y Privado</li>
+                            <li data-i18n="resumen-li1">✓ <span class="font-semibold">0%</span> Datos Personales Recopilados</li>
+                            <li data-i18n="resumen-li2">✓ <span class="font-semibold">0%</span> Retención de Imágenes (No se guardan)</li>
+                            <li data-i18n="resumen-li3">✓ <span class="font-semibold">100%</span> Procesamiento Efímero y Privado</li>
                         </ul>
                     </div>
                     <div class="chart-container">
@@ -102,86 +108,86 @@
 
             <!-- SECTION: Datos y Privacidad -->
             <div id="datos" class="content-section fade-in hidden">
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">1. Recopilación y Uso de la Información</h2>
-                <p class="text-slate-600 mb-6 italic">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="datos-title">1. Recopilación y Uso de la Información</h2>
+                <p class="text-slate-600 mb-6 italic" data-i18n="datos-p1">
                     Aquí detallamos exactamente qué información NO tocamos. El propósito de esta sección es darte la tranquilidad de que tu uso de la aplicación y cualquier caso de estudio que analices se mantiene en el anonimato total.
                 </p>
                 
-                <div class="bg-red-50 text-red-800 p-4 rounded-lg font-medium mb-6 border border-red-100">
+                <div class="bg-red-50 text-red-800 p-4 rounded-lg font-medium mb-6 border border-red-100" data-i18n="datos-alert">
                     ECGreaderPro NO recopila, almacena, procesa ni transmite ningún tipo de información personal, datos médicos, información de pacientes, fotografías o imágenes.
                 </div>
 
-                <p class="text-slate-700 mb-4">La Aplicación está diseñada para funcionar sin requerir que el usuario cree una cuenta o proporcione información identificable. Todo el uso de la Aplicación y sus herramientas de orientación diagnóstica se realiza de manera anónima.</p>
+                <p class="text-slate-700 mb-4" data-i18n="datos-p2">La Aplicación está diseñada para funcionar sin requerir que el usuario cree una cuenta o proporcione información identificable. Todo el uso de la Aplicación y sus herramientas de orientación diagnóstica se realiza de manera anónima.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                     <div class="border border-slate-200 p-4 rounded-lg hover:shadow-md transition-shadow">
                         <div class="text-2xl mb-2">👤</div>
-                        <h4 class="font-bold text-slate-800">Datos del Paciente</h4>
-                        <p class="text-sm text-slate-600 mt-2">No solicitamos, leemos ni guardamos nombres, historiales clínicos, ni ningún otro dato protegido por leyes de privacidad en salud (como HIPAA, GDPR u otras regulaciones locales).</p>
+                        <h4 class="font-bold text-slate-800" data-i18n="datos-h4-1">Datos del Paciente</h4>
+                        <p class="text-sm text-slate-600 mt-2" data-i18n="datos-p3">No solicitamos, leemos ni guardamos nombres, historiales clínicos, ni ningún otro dato protegido por leyes de privacidad en salud (como HIPAA, GDPR u otras regulaciones locales).</p>
                     </div>
                     <div class="border border-slate-200 p-4 rounded-lg hover:shadow-md transition-shadow">
                         <div class="text-2xl mb-2">📷</div>
-                        <h4 class="font-bold text-slate-800">Imágenes y Fotos</h4>
-                        <p class="text-sm text-slate-600 mt-2">La Aplicación solicita acceso a tu cámara para capturar los electrocardiogramas. Estas imágenes se procesan en línea de forma efímera para generar la orientación, pero <strong>NO se guardan ni almacenan</strong> en nuestros servidores. Además, el dueño y desarrollador de la app <strong>no tiene acceso</strong> a los escaneos en ningún momento.</p>
+                        <h4 class="font-bold text-slate-800" data-i18n="datos-h4-2">Imágenes y Fotos</h4>
+                        <p class="text-sm text-slate-600 mt-2" data-i18n="datos-p4">La Aplicación solicita acceso a tu cámara para capturar los electrocardiogramas. Estas imágenes se procesan en línea de forma efímera para generar la orientación, pero <strong>NO se guardan ni almacenan</strong> en nuestros servidores. Además, el dueño y desarrollador de la app <strong>no tiene acceso</strong> a los escaneos en ningún momento.</p>
                     </div>
                     <div class="border border-slate-200 p-4 rounded-lg hover:shadow-md transition-shadow md:col-span-2">
                         <div class="text-2xl mb-2">📊</div>
-                        <h4 class="font-bold text-slate-800">Datos de Uso (Analíticas de Tiendas)</h4>
-                        <p class="text-sm text-slate-600 mt-2">Es posible que las tiendas de aplicaciones (como Google Play Store o Apple App Store) recopilen datos de uso anónimos y reportes de fallos (crash logs) de manera automática para métricas de rendimiento. Estos datos no están vinculados a ninguna información personal ni médica.</p>
+                        <h4 class="font-bold text-slate-800" data-i18n="datos-h4-3">Datos de Uso (Analíticas de Tiendas)</h4>
+                        <p class="text-sm text-slate-600 mt-2" data-i18n="datos-p5">Es posible que las tiendas de aplicaciones (como Google Play Store o Apple App Store) recopilen datos de uso anónimos y reportes de fallos (crash logs) de manera automática para métricas de rendimiento. Estos datos no están vinculados a ninguna información personal ni médica.</p>
                     </div>
                 </div>
             </div>
 
             <!-- SECTION: Descargo Médico -->
             <div id="descargo" class="content-section fade-in hidden">
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">2. Propósito de la Aplicación</h2>
-                <p class="text-slate-600 mb-6 italic">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="descargo-title">2. Propósito de la Aplicación</h2>
+                <p class="text-slate-600 mb-6 italic" data-i18n="descargo-p1">
                     Esta es la sección más crítica para el uso seguro de nuestra herramienta. Explica los límites de la aplicación y reafirma que la responsabilidad diagnóstica recae siempre en un profesional humano.
                 </p>
 
                 <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
-                    <h3 class="text-xl font-bold text-amber-800 mb-4">Descargo de Responsabilidad Médica</h3>
-                    <p class="text-amber-900 mb-4"><strong>ECGreaderPro</strong> es una aplicación diseñada <strong>exclusivamente con fines educativos y de orientación para profesionales y estudiantes de la salud.</strong></p>
+                    <h3 class="text-xl font-bold text-amber-800 mb-4" data-i18n="descargo-h3">Descargo de Responsabilidad Médica</h3>
+                    <p class="text-amber-900 mb-4" data-i18n="descargo-p2"><strong>ECGreaderPro</strong> es una aplicación diseñada <strong>exclusivamente con fines educativos y de orientación para profesionales y estudiantes de la salud.</strong></p>
                     
                     <ul class="list-disc list-inside text-amber-900 space-y-3 mb-6">
-                        <li><strong>No es un dispositivo médico:</strong> La Aplicación no está diseñada para ser utilizada como un sustituto del juicio clínico profesional, ni para el diagnóstico definitivo, tratamiento, mitigación o prevención de ninguna enfermedad o condición médica.</li>
-                        <li><strong>Consulta profesional:</strong> Los resultados, orientaciones o información proporcionada por la Aplicación nunca deben reemplazar el análisis de un médico calificado. Cualquier decisión médica tomada en base a la información educativa de esta App es bajo la exclusiva responsabilidad del usuario.</li>
+                        <li data-i18n="descargo-li1"><strong>No es un dispositivo médico:</strong> La Aplicación no está diseñada para ser utilizada como un sustituto del juicio clínico profesional, ni para el diagnóstico definitivo, tratamiento, mitigación o prevención de ninguna enfermedad o condición médica.</li>
+                        <li data-i18n="descargo-li2"><strong>Consulta profesional:</strong> Los resultados, orientaciones o información proporcionada por la Aplicación nunca deben reemplazar el análisis de un médico calificado. Cualquier decisión médica tomada en base a la información educativa de esta App es bajo la exclusiva responsabilidad del usuario.</li>
                     </ul>
 
                     <!-- Interacción para asegurar lectura -->
                     <div class="bg-white p-4 rounded-lg border border-amber-200 flex items-center gap-3 mt-4">
                         <input type="checkbox" id="ack-checkbox" class="w-5 h-5 text-teal-600 rounded focus:ring-teal-500 cursor-pointer">
-                        <label for="ack-checkbox" class="text-slate-700 font-medium cursor-pointer select-none">He leído y comprendo que esta aplicación no sustituye el consejo médico profesional.</label>
+                        <label for="ack-checkbox" class="text-slate-700 font-medium cursor-pointer select-none" data-i18n="descargo-label">He leído y comprendo que esta aplicación no sustituye el consejo médico profesional.</label>
                     </div>
-                    <div id="ack-message" class="text-teal-700 font-bold mt-3 hidden transition-all">¡Gracias por confirmar tu comprensión de estos términos!</div>
+                    <div id="ack-message" class="text-teal-700 font-bold mt-3 hidden transition-all" data-i18n="descargo-ack">¡Gracias por confirmar tu comprensión de estos términos!</div>
                 </div>
             </div>
 
             <!-- SECTION: Detalles Técnicos -->
             <div id="tecnico" class="content-section fade-in hidden">
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">3. Detalles Técnicos y Procesamiento</h2>
-                <p class="text-slate-600 mb-6 italic">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="tecnico-title">3. Detalles Técnicos y Procesamiento</h2>
+                <p class="text-slate-600 mb-6 italic" data-i18n="tecnico-p1">
                     Aquí explicamos cómo funciona la aplicación a nivel de hardware y software en tu dispositivo, garantizando que todo se mantenga dentro de tu teléfono.
                 </p>
 
                 <div class="space-y-8">
                     <div>
-                        <h3 class="text-xl font-bold text-teal-700 mb-2">Permisos de la Aplicación</h3>
-                        <p class="text-slate-700 mb-3">Nuestra Aplicación requiere permisos específicos estrictamente para su funcionamiento principal, manteniendo la premisa de no recopilar datos personales sensibles.</p>
+                        <h3 class="text-xl font-bold text-teal-700 mb-2" data-i18n="tecnico-h3-1">Permisos de la Aplicación</h3>
+                        <p class="text-slate-700 mb-3" data-i18n="tecnico-p2">Nuestra Aplicación requiere permisos específicos estrictamente para su funcionamiento principal, manteniendo la premisa de no recopilar datos personales sensibles.</p>
                         <div class="flex gap-4 flex-wrap">
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800">✓ Acceso a Cámara (Para capturar ECG)</span>
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">✖ Sin acceso a GPS</span>
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">✖ Sin acceso a Micrófono</span>
-                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">✖ Sin acceso a Contactos</span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800" data-i18n="tecnico-tag1">✓ Acceso a Cámara (Para capturar ECG)</span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800" data-i18n="tecnico-tag2">✖ Sin acceso a GPS</span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800" data-i18n="tecnico-tag3">✖ Sin acceso a Micrófono</span>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800" data-i18n="tecnico-tag4">✖ Sin acceso a Contactos</span>
                         </div>
                     </div>
 
                     <div class="border-t border-slate-200 pt-6">
-                        <h3 class="text-xl font-bold text-teal-700 mb-2">Almacenamiento y Procesamiento</h3>
-                        <p class="text-slate-700 mb-4">El análisis de las imágenes requiere de procesamiento en línea para ofrecer una orientación precisa. Sin embargo, hemos implementado una arquitectura estricta de "cero retención".</p>
+                        <h3 class="text-xl font-bold text-teal-700 mb-2" data-i18n="tecnico-h3-2">Almacenamiento y Procesamiento</h3>
+                        <p class="text-slate-700 mb-4" data-i18n="tecnico-p3">El análisis de las imágenes requiere de procesamiento en línea para ofrecer una orientación precisa. Sin embargo, hemos implementado una arquitectura estricta de "cero retención".</p>
                         
                         <div class="bg-slate-800 rounded-lg p-4 text-slate-300 font-mono text-sm overflow-x-auto">
-                            <code>
+                            <code data-i18n="tecnico-code">
                                 // Flujo de Datos en ECGreaderPro<br>
                                 [Dispositivo] --> [Servidor de Análisis] --> [Pantalla]<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
@@ -191,37 +197,37 @@
                                 ❌ Cero acceso humano a los escaneos
                             </code>
                         </div>
-                        <p class="text-slate-500 text-sm mt-2">Las imágenes se transmiten de forma segura, el algoritmo las analiza y las destruye instantáneamente. No existen bases de datos con tu información o la de los casos estudiados.</p>
+                        <p class="text-slate-500 text-sm mt-2" data-i18n="tecnico-p4">Las imágenes se transmiten de forma segura, el algoritmo las analiza y las destruye instantáneamente. No existen bases de datos con tu información o la de los casos estudiados.</p>
                     </div>
                 </div>
             </div>
 
             <!-- SECTION: Información General -->
             <div id="general" class="content-section fade-in hidden">
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">4. Información General Adicional</h2>
-                <p class="text-slate-600 mb-6 italic">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="general-title">4. Información General Adicional</h2>
+                <p class="text-slate-600 mb-6 italic" data-i18n="general-p1">
                     En esta sección final se detallan políticas estándar referentes a enlaces externos, uso por menores de edad, actualizaciones del documento y medios de contacto.
                 </p>
 
                 <div class="space-y-6 text-slate-700">
                     <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
-                        <h4 class="font-bold text-slate-800 mb-2">Privacidad de los Menores</h4>
-                        <p>Nuestra Aplicación está dirigida a estudiantes de medicina, profesionales de la salud y adultos interesados en el tema. No recopilamos a sabiendas información de niños menores de 13 años (o la edad mínima legal en su jurisdicción). Si eres padre o tutor y crees que un menor nos ha proporcionado datos de alguna forma a través de un error del sistema, contáctanos para investigar y solucionar la situación.</p>
+                        <h4 class="font-bold text-slate-800 mb-2" data-i18n="general-h4-1">Privacidad de los Menores</h4>
+                        <p data-i18n="general-p2">Nuestra Aplicación está dirigida a estudiantes de medicina, profesionales de la salud y adultos interesados en el tema. No recopilamos a sabiendas información de niños menores de 13 años (o la edad mínima legal en su jurisdicción). Si eres padre o tutor y crees que un menor nos ha proporcionado datos de alguna forma a través de un error del sistema, contáctanos para investigar y solucionar la situación.</p>
                     </div>
 
                     <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
-                        <h4 class="font-bold text-slate-800 mb-2">Enlaces a Sitios de Terceros</h4>
-                        <p>La Aplicación podría contener enlaces a sitios web de terceros (por ejemplo, bibliotecas médicas, artículos de investigación o literatura recomendada). No somos responsables de las prácticas de privacidad ni del contenido de esos sitios externos. Te recomendamos leer las políticas de privacidad de cualquier sitio web que visites.</p>
+                        <h4 class="font-bold text-slate-800 mb-2" data-i18n="general-h4-2">Enlaces a Sitios de Terceros</h4>
+                        <p data-i18n="general-p3">La Aplicación podría contener enlaces a sitios web de terceros (por ejemplo, bibliotecas médicas, artículos de investigación o literatura recomendada). No somos responsables de las prácticas de privacidad ni del contenido de esos sitios externos. Te recomendamos leer las políticas de privacidad de cualquier sitio web que visites.</p>
                     </div>
 
                     <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
-                        <h4 class="font-bold text-slate-800 mb-2">Cambios a esta Política</h4>
-                        <p>Podemos actualizar nuestra Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas o por razones operativas, legales o reglamentarias. Te notificaremos sobre cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la "Última actualización" en la parte superior.</p>
+                        <h4 class="font-bold text-slate-800 mb-2" data-i18n="general-h4-3">Cambios a esta Política</h4>
+                        <p data-i18n="general-p4">Podemos actualizar nuestra Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas o por razones operativas, legales o reglamentarias. Te notificaremos sobre cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la "Última actualización" en la parte superior.</p>
                     </div>
 
                     <div class="bg-teal-50 p-6 rounded-lg border border-teal-200 text-center mt-8">
-                        <h3 class="text-xl font-bold text-teal-800 mb-2">Contacto</h3>
-                        <p class="text-teal-700 mb-4">Si tienes alguna pregunta, inquietud o sugerencia sobre esta Política de Privacidad o sobre el funcionamiento de la Aplicación, no dudes en contactarnos:</p>
+                        <h3 class="text-xl font-bold text-teal-800 mb-2" data-i18n="general-h3">Contacto</h3>
+                        <p class="text-teal-700 mb-4" data-i18n="general-p5">Si tienes alguna pregunta, inquietud o sugerencia sobre esta Política de Privacidad o sobre el funcionamiento de la Aplicación, no dudes en contactarnos:</p>
                         <a href="mailto:netoandres@gmail.com" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
                             ✉ netoandres@gmail.com
                         </a>
@@ -234,11 +240,157 @@
 
     <!-- Footer -->
     <footer class="bg-slate-800 text-slate-400 py-6 text-center text-sm mt-auto">
-        <p>© 2026 ECGreaderPro. Documento de Política de Privacidad interactivo.</p>
+        <p data-i18n="footer-text">© 2026 ECGreaderPro. Documento de Política de Privacidad interactivo.</p>
     </footer>
 
     <!-- JavaScript Logic -->
     <script>
+        // --- Translations Dictionary ---
+        const i18n = {
+            es: {
+                "header-subtitle": "Transparencia y Privacidad",
+                "last-update": "Última actualización: 10 de marzo de 2026",
+                "nav-title": "Explorar Política",
+                "nav-resumen": "Resumen Principal",
+                "nav-datos": "1. Datos y Privacidad",
+                "nav-descargo": "2. Descargo Médico",
+                "nav-tecnico": "3. Detalles Técnicos",
+                "nav-general": "4. Información General",
+                "resumen-title": "Bienvenido a la Privacidad por Diseño",
+                "resumen-p1": "Esta sección introductoria resume la filosofía principal de ECGreaderPro: ser una herramienta estrictamente educativa sin comprometer información sensible.",
+                "resumen-h3": "Nuestro Compromiso",
+                "resumen-p2": "Nuestra prioridad principal es tu privacidad y la seguridad de la información médica. No requerimos cuentas, analizamos la información de forma segura y funcionamos de manera anónima.",
+                "resumen-li1": "✓ <span class=\"font-semibold\">0%</span> Datos Personales Recopilados",
+                "resumen-li2": "✓ <span class=\"font-semibold\">0%</span> Retención de Imágenes (No se guardan)",
+                "resumen-li3": "✓ <span class=\"font-semibold\">100%</span> Procesamiento Efímero y Privado",
+                "datos-title": "1. Recopilación y Uso de la Información",
+                "datos-p1": "Aquí detallamos exactamente qué información NO tocamos. El propósito de esta sección es darte la tranquilidad de que tu uso de la aplicación y cualquier caso de estudio que analices se mantiene en el anonimato total.",
+                "datos-alert": "ECGreaderPro NO recopila, almacena, procesa ni transmite ningún tipo de información personal, datos médicos, información de pacientes, fotografías o imágenes.",
+                "datos-p2": "La Aplicación está diseñada para funcionar sin requerir que el usuario cree una cuenta o proporcione información identificable. Todo el uso de la Aplicación y sus herramientas de orientación diagnóstica se realiza de manera anónima.",
+                "datos-h4-1": "Datos del Paciente",
+                "datos-p3": "No solicitamos, leemos ni guardamos nombres, historiales clínicos, ni ningún otro dato protegido por leyes de privacidad en salud (como HIPAA, GDPR u otras regulaciones locales).",
+                "datos-h4-2": "Imágenes y Fotos",
+                "datos-p4": "La Aplicación solicita acceso a tu cámara para capturar los electrocardiogramas. Estas imágenes se procesan en línea de forma efímera para generar la orientación, pero <strong>NO se guardan ni almacenan</strong> en nuestros servidores. Además, el dueño y desarrollador de la app <strong>no tiene acceso</strong> a los escaneos en ningún momento.",
+                "datos-h4-3": "Datos de Uso (Analíticas de Tiendas)",
+                "datos-p5": "Es posible que las tiendas de aplicaciones (como Google Play Store o Apple App Store) recopilen datos de uso anónimos y reportes de fallos (crash logs) de manera automática para métricas de rendimiento. Estos datos no están vinculados a ninguna información personal ni médica.",
+                "descargo-title": "2. Propósito de la Aplicación",
+                "descargo-p1": "Esta es la sección más crítica para el uso seguro de nuestra herramienta. Explica los límites de la aplicación y reafirma que la responsabilidad diagnóstica recae siempre en un profesional humano.",
+                "descargo-h3": "Descargo de Responsabilidad Médica",
+                "descargo-p2": "<strong>ECGreaderPro</strong> es una aplicación diseñada <strong>exclusivamente con fines educativos y de orientación para profesionales y estudiantes de la salud.</strong>",
+                "descargo-li1": "<strong>No es un dispositivo médico:</strong> La Aplicación no está diseñada para ser utilizada como un sustituto del juicio clínico profesional, ni para el diagnóstico definitivo, tratamiento, mitigación o prevención de ninguna enfermedad o condición médica.",
+                "descargo-li2": "<strong>Consulta profesional:</strong> Los resultados, orientaciones o información proporcionada por la Aplicación nunca deben reemplazar el análisis de un médico calificado. Cualquier decisión médica tomada en base a la información educativa de esta App es bajo la exclusiva responsabilidad del usuario.",
+                "descargo-label": "He leído y comprendo que esta aplicación no sustituye el consejo médico profesional.",
+                "descargo-ack": "¡Gracias por confirmar tu comprensión de estos términos!",
+                "tecnico-title": "3. Detalles Técnicos y Procesamiento",
+                "tecnico-p1": "Aquí explicamos cómo funciona la aplicación a nivel de hardware y software en tu dispositivo, garantizando que todo se mantenga dentro de tu teléfono.",
+                "tecnico-h3-1": "Permisos de la Aplicación",
+                "tecnico-p2": "Nuestra Aplicación requiere permisos específicos estrictamente para su funcionamiento principal, manteniendo la premisa de no recopilar datos personales sensibles.",
+                "tecnico-tag1": "✓ Acceso a Cámara (Para capturar ECG)",
+                "tecnico-tag2": "✖ Sin acceso a GPS",
+                "tecnico-tag3": "✖ Sin acceso a Micrófono",
+                "tecnico-tag4": "✖ Sin acceso a Contactos",
+                "tecnico-h3-2": "Almacenamiento y Procesamiento",
+                "tecnico-p3": "El análisis de las imágenes requiere de procesamiento en línea para ofrecer una orientación precisa. Sin embargo, hemos implementado una arquitectura estricta de \"cero retención\".",
+                "tecnico-code": `
+                                // Flujo de Datos en ECGreaderPro<br>
+                                [Dispositivo] --> [Servidor de Análisis] --> [Pantalla]<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🗑️ Eliminación Inmediata<br>
+                                <br>
+                                ❌ Cero almacenamiento de imágenes<br>
+                                ❌ Cero acceso humano a los escaneos
+                `,
+                "tecnico-p4": "Las imágenes se transmiten de forma segura, el algoritmo las analiza y las destruye instantáneamente. No existen bases de datos con tu información o la de los casos estudiados.",
+                "general-title": "4. Información General Adicional",
+                "general-p1": "En esta sección final se detallan políticas estándar referentes a enlaces externos, uso por menores de edad, actualizaciones del documento y medios de contacto.",
+                "general-h4-1": "Privacidad de los Menores",
+                "general-p2": "Nuestra Aplicación está dirigida a estudiantes de medicina, profesionales de la salud y adultos interesados en el tema. No recopilamos a sabiendas información de niños menores de 13 años (o la edad mínima legal en su jurisdicción). Si eres padre o tutor y crees que un menor nos ha proporcionado datos de alguna forma a través de un error del sistema, contáctanos para investigar y solucionar la situación.",
+                "general-h4-2": "Enlaces a Sitios de Terceros",
+                "general-p3": "La Aplicación podría contener enlaces a sitios web de terceros (por ejemplo, bibliotecas médicas, artículos de investigación o literatura recomendada). No somos responsables de las prácticas de privacidad ni del contenido de esos sitios externos. Te recomendamos leer las políticas de privacidad de cualquier sitio web que visites.",
+                "general-h4-3": "Cambios a esta Política",
+                "general-p4": "Podemos actualizar nuestra Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas o por razones operativas, legales o reglamentarias. Te notificaremos sobre cualquier cambio publicando la nueva Política de Privacidad en esta página y actualizando la \"Última actualización\" en la parte superior.",
+                "general-h3": "Contacto",
+                "general-p5": "Si tienes alguna pregunta, inquietud o sugerencia sobre esta Política de Privacidad o sobre el funcionamiento de la Aplicación, no dudes en contactarnos:",
+                "footer-text": "© 2026 ECGreaderPro. Documento de Política de Privacidad interactivo.",
+                "chart-l1": "Procesamiento Efímero (Sin guardar)",
+                "chart-l2": "Imágenes Almacenadas",
+                "chart-l3": "Datos Personales Recopilados",
+                "chart-center": "Retención"
+            },
+            en: {
+                "header-subtitle": "Transparency & Privacy",
+                "last-update": "Last updated: March 10, 2026",
+                "nav-title": "Explore Policy",
+                "nav-resumen": "Main Summary",
+                "nav-datos": "1. Data & Privacy",
+                "nav-descargo": "2. Medical Disclaimer",
+                "nav-tecnico": "3. Technical Details",
+                "nav-general": "4. General Info",
+                "resumen-title": "Welcome to Privacy by Design",
+                "resumen-p1": "This introductory section summarizes ECGreaderPro's core philosophy: being a strictly educational tool without compromising sensitive information.",
+                "resumen-h3": "Our Commitment",
+                "resumen-p2": "Our main priority is your privacy and the security of medical information. We don't require accounts, we analyze information securely, and we operate anonymously.",
+                "resumen-li1": "✓ <span class=\"font-semibold\">0%</span> Personal Data Collected",
+                "resumen-li2": "✓ <span class=\"font-semibold\">0%</span> Image Retention (Not saved)",
+                "resumen-li3": "✓ <span class=\"font-semibold\">100%</span> Ephemeral & Private Processing",
+                "datos-title": "1. Information Collection and Use",
+                "datos-p1": "Here we detail exactly what information we DO NOT touch. The purpose of this section is to give you peace of mind that your use of the app and any case studies you analyze remain completely anonymous.",
+                "datos-alert": "ECGreaderPro DOES NOT collect, store, process, or transmit any personal information, medical data, patient information, photographs, or images.",
+                "datos-p2": "The Application is designed to function without requiring the user to create an account or provide identifiable information. All use of the App and its diagnostic guidance tools is done anonymously.",
+                "datos-h4-1": "Patient Data",
+                "datos-p3": "We do not request, read, or save names, medical records, or any other data protected by health privacy laws (such as HIPAA, GDPR, or other local regulations).",
+                "datos-h4-2": "Images and Photos",
+                "datos-p4": "The App requests access to your camera to capture electrocardiograms. These images are processed online ephemerally to generate guidance, but they are <strong>NOT saved or stored</strong> on our servers. Furthermore, the app owner and developer <strong>do not have access</strong> to the scans at any time.",
+                "datos-h4-3": "Usage Data (Store Analytics)",
+                "datos-p5": "App stores (like Google Play Store or Apple App Store) may automatically collect anonymous usage data and crash logs for performance metrics. This data is not linked to any personal or medical information.",
+                "descargo-title": "2. Purpose of the Application",
+                "descargo-p1": "This is the most critical section for the safe use of our tool. It explains the app's limitations and reaffirms that diagnostic responsibility always rests with a human professional.",
+                "descargo-h3": "Medical Disclaimer",
+                "descargo-p2": "<strong>ECGreaderPro</strong> is an application designed <strong>exclusively for educational and guidance purposes for healthcare professionals and students.</strong>",
+                "descargo-li1": "<strong>Not a medical device:</strong> The Application is not designed to be used as a substitute for professional clinical judgment, nor for the definitive diagnosis, treatment, mitigation, or prevention of any disease or medical condition.",
+                "descargo-li2": "<strong>Professional consultation:</strong> The results, guidance, or information provided by the Application should never replace the analysis of a qualified physician. Any medical decision made based on the educational information in this App is at the user's sole risk.",
+                "descargo-label": "I have read and understand that this application does not replace professional medical advice.",
+                "descargo-ack": "Thank you for confirming your understanding of these terms!",
+                "tecnico-title": "3. Technical Details and Processing",
+                "tecnico-p1": "Here we explain how the application works at the hardware and software level, ensuring everything stays secure.",
+                "tecnico-h3-1": "Application Permissions",
+                "tecnico-p2": "Our Application requires specific permissions strictly for its core functionality, maintaining the premise of not collecting sensitive personal data.",
+                "tecnico-tag1": "✓ Camera Access (To capture ECG)",
+                "tecnico-tag2": "✖ No GPS access",
+                "tecnico-tag3": "✖ No Microphone access",
+                "tecnico-tag4": "✖ No Contacts access",
+                "tecnico-h3-2": "Storage and Processing",
+                "tecnico-p3": "Image analysis requires online processing to offer accurate guidance. However, we have implemented a strict \"zero retention\" architecture.",
+                "tecnico-code": `
+                                // Data Flow in ECGreaderPro<br>
+                                [Device] --> [Analysis Server] --> [Screen]<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🗑️ Immediate Deletion<br>
+                                <br>
+                                ❌ Zero image storage<br>
+                                ❌ Zero human access to scans
+                `,
+                "tecnico-p4": "Images are transmitted securely, the algorithm analyzes them and destroys them instantly. There are no databases with your information or the studied cases.",
+                "general-title": "4. Additional General Information",
+                "general-p1": "This final section details standard policies regarding external links, use by minors, document updates, and contact methods.",
+                "general-h4-1": "Children's Privacy",
+                "general-p2": "Our App is aimed at medical students, healthcare professionals, and interested adults. We do not knowingly collect information from children under 13 (or the legal minimum age in your jurisdiction). If you are a parent or guardian and believe a minor has provided us with data, contact us to investigate and resolve the situation.",
+                "general-h4-2": "Links to Third-Party Sites",
+                "general-p3": "The App may contain links to third-party websites (e.g., medical libraries, research articles, or recommended literature). We are not responsible for the privacy practices or content of these external sites. We recommend reading the privacy policies of any website you visit.",
+                "general-h4-3": "Changes to this Policy",
+                "general-p4": "We may update our Privacy Policy periodically to reflect changes in our practices or for operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last updated\" date at the top.",
+                "general-h3": "Contact",
+                "general-p5": "If you have any questions, concerns, or suggestions regarding this Privacy Policy or how the App works, please do not hesitate to contact us:",
+                "footer-text": "© 2026 ECGreaderPro. Interactive Privacy Policy Document.",
+                "chart-l1": "Ephemeral Processing (Unsaved)",
+                "chart-l2": "Stored Images",
+                "chart-l3": "Personal Data Collected",
+                "chart-center": "Retention"
+            }
+        };
+
+        let currentLang = 'es';
+
         document.addEventListener('DOMContentLoaded', () => {
             // --- Navigation Logic ---
             const tabButtons = document.querySelectorAll('.tab-btn');
@@ -334,7 +486,7 @@
                         
                         ctx.font = "normal " + (fontSize/2.5) + "em sans-serif";
                         ctx.fillStyle = "#64748b"; // slate-500
-                        var text2 = "Retención";
+                        var text2 = i18n[currentLang]["chart-center"]; // Dynamic Center Text
                         var text2X = Math.round((width - ctx.measureText(text2).width) / 2);
                         ctx.fillText(text2, text2X, textY + 25);
                         
@@ -355,6 +507,34 @@
                     ackMessage.classList.add('hidden');
                     ackMessage.classList.remove('block', 'fade-in');
                 }
+            });
+
+            // --- Language Switcher Logic ---
+            const langBtn = document.getElementById('lang-btn');
+            
+            function updateLanguage(lang) {
+                // Update text elements based on data-i18n attributes
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (i18n[lang] && i18n[lang][key]) {
+                        el.innerHTML = i18n[lang][key];
+                    }
+                });
+                
+                // Update chart labels explicitly
+                privacyChart.data.labels = [
+                    i18n[lang]["chart-l1"],
+                    i18n[lang]["chart-l2"],
+                    i18n[lang]["chart-l3"]
+                ];
+                privacyChart.update();
+            }
+
+            // Button Event Listener
+            langBtn.addEventListener('click', () => {
+                currentLang = currentLang === 'es' ? 'en' : 'es';
+                langBtn.innerHTML = currentLang === 'es' ? '🌐 ES / EN' : '🌐 EN / ES';
+                updateLanguage(currentLang);
             });
         });
     </script>
